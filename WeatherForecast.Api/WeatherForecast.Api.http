@@ -31,7 +31,7 @@ Accept: application/json
 }
 
 ### Delete Weather Forecast
-DELETE {{WeatherForecast.Api_HostAddress}}/WeatherForecast?latitude=51.1079&longitude=17.0385
+DELETE {{WeatherForecast.Api_HostAddress}}/WeatherForecast?latitude=-33.8689&longitude=151.2093
 Accept: application/json
 
 ### Get Weather Forecast History with Limit
