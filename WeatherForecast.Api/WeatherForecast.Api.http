@@ -1,0 +1,39 @@
+@WeatherForecast.Api_HostAddress = https://localhost:7016
+
+### Get Weather Forecast by Latitude and Longitude
+GET {{WeatherForecast.Api_HostAddress}}/WeatherForecast?latitude=51.1079&longitude=17.0385
+Accept: application/json
+
+### Get Weather Forecast for another set of coordinates
+GET {{WeatherForecast.Api_HostAddress}}/WeatherForecast?latitude=40.7128&longitude=-74.0060
+Accept: application/json
+
+### Attempt to Get Weather Forecast with invalid Latitude (should result in error)
+GET {{WeatherForecast.Api_HostAddress}}/WeatherForecast?latitude=91&longitude=10
+Accept: application/json
+
+### Attempt to Get Weather Forecast with invalid Longitude (should result in error)
+GET {{WeatherForecast.Api_HostAddress}}/WeatherForecast?latitude=10&longitude=181
+Accept: application/json
+
+### Get Weather Forecast specifying newest data
+GET {{WeatherForecast.Api_HostAddress}}/WeatherForecast?latitude=51.1079&longitude=17.0385&newest=true
+Accept: application/json
+
+### Add Weather Forecast (POST)
+POST {{WeatherForecast.Api_HostAddress}}/WeatherForecast
+Content-Type: application/json
+Accept: application/json
+
+{
+    "latitude": -33.8689,
+    "longitude": 151.2093
+}
+
+### Delete Weather Forecast
+DELETE {{WeatherForecast.Api_HostAddress}}/WeatherForecast?latitude=51.1079&longitude=17.0385
+Accept: application/json
+
+### Get Weather Forecast History with Limit
+GET {{WeatherForecast.Api_HostAddress}}/WeatherForecast/history?limit=5
+Accept: application/json

@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sql-server
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: "P@ssw0rd"
+    healthcheck:
+      test:  ["CMD", "bash", "-c", "cat < /dev/null > /dev/tcp/localhost/1433"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+  weather-forecast-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: weather-forecast-api
+    env_file:
+      - .env
+    ports:
+      - 5046:80
+      - 7016:443
+    volumes:
+      - ${CERT_PATH}:/https/cert.pfx:ro
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+volumes:
+  sql_data:

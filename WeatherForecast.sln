@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Domain", "WeatherForecast.Domain\WeatherForecast.Domain.csproj", "{145C0B51-2CF7-4050-B3A5-745F8421BAF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Tests.Unit", "WeatherForecast.Tests.Unit\WeatherForecast.Tests.Unit.csproj", "{253A2F60-95A7-4D7F-8092-72B6BDDB375C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Infrastructure", "WeatherForecast.Infrastructure\WeatherForecast.Infrastructure.csproj", "{9A7FC7B0-1AE7-41E1-9847-7DC46922AA1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Application", "WeatherForecast.Application\WeatherForecast.Application.csproj", "{0F0852A7-4FB5-4579-8A18-4D65BAD3B13C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Api", "WeatherForecast.Api\WeatherForecast.Api.csproj", "{BB43D001-EB68-4A80-B5AE-73EAC3574731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.Tests.Integration", "WeatherForecast.Tests.Integration\WeatherForecast.Tests.Integration.csproj", "{C1AF23F6-3061-409B-8529-F73674439AE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C161FB36-6135-47D7-A6A6-7B0D9BE8BB4D}"
+	ProjectSection(SolutionItems) = preProject
+		.env = .env
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{145C0B51-2CF7-4050-B3A5-745F8421BAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145C0B51-2CF7-4050-B3A5-745F8421BAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145C0B51-2CF7-4050-B3A5-745F8421BAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145C0B51-2CF7-4050-B3A5-745F8421BAF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253A2F60-95A7-4D7F-8092-72B6BDDB375C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253A2F60-95A7-4D7F-8092-72B6BDDB375C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253A2F60-95A7-4D7F-8092-72B6BDDB375C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253A2F60-95A7-4D7F-8092-72B6BDDB375C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7FC7B0-1AE7-41E1-9847-7DC46922AA1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7FC7B0-1AE7-41E1-9847-7DC46922AA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7FC7B0-1AE7-41E1-9847-7DC46922AA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7FC7B0-1AE7-41E1-9847-7DC46922AA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0852A7-4FB5-4579-8A18-4D65BAD3B13C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0852A7-4FB5-4579-8A18-4D65BAD3B13C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0852A7-4FB5-4579-8A18-4D65BAD3B13C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0852A7-4FB5-4579-8A18-4D65BAD3B13C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB43D001-EB68-4A80-B5AE-73EAC3574731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB43D001-EB68-4A80-B5AE-73EAC3574731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB43D001-EB68-4A80-B5AE-73EAC3574731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB43D001-EB68-4A80-B5AE-73EAC3574731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1AF23F6-3061-409B-8529-F73674439AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1AF23F6-3061-409B-8529-F73674439AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1AF23F6-3061-409B-8529-F73674439AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1AF23F6-3061-409B-8529-F73674439AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
